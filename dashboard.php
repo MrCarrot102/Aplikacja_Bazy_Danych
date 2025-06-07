@@ -26,20 +26,9 @@ elseif ($rola === 'admin') {
         <li><a href='list_cars.php'>Lista samochodów</a></li>
         <li><a href='add_car.php'>Dodaj samochód</a></li>
         <li><a href='list_clients.php'>Lista klientów</a></li>
-        <li><a href='add_client.php'>Dodaj klienta</a></li>
         <li><a href='list_reservations.php'>Lista rezerwacji</a></li>
-        <li><a href='add_reservation.php'>Dodaj rezerwację</a></li>
+
     </ul>";
-}
-
-
-// PANEL PRACOWNIKA
-elseif ($rola === 'pracownik') {
-    echo "<h2>Panel pracownika</h2>";
-    echo "<ul>
-            <li><a href='list_reservations.php'>Lista rezerwacji</a></li>
-            <li><a href='list_clients.php'>Lista klientów</a></li>
-          </ul>";
 }
 
 include 'footer.php';

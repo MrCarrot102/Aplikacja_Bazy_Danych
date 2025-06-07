@@ -11,6 +11,9 @@ include 'header.php';
 
 echo "<h2>Lista klientów</h2>";
 
+// Dodaj przycisk "Dodaj klienta" widoczny tylko dla admina
+echo "<a href='add_client.php' class='btn btn-primary mb-3'>Dodaj klienta</a>";
+
 $result = $conn->query("SELECT klient_id, imie, nazwisko, email FROM klient");
 
 if ($result->num_rows > 0) {
